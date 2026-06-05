@@ -44,23 +44,6 @@ Estilos y Maquetación: CSS Puro modularizado mediante Custom Properties (Variab
 
 Componentes de UI: FontAwesome 6 (Iconografía) y Google Fonts (Familia Poppins para legibilidad geométrica corporativa).
 
-📂 Arquitectura del Proyecto
-/
-├── config/
-│   └── conexion.php           # Core Data: Configuración DSN, PDO y manejador de excepciones
-├── includes/
-│   ├── header.php             # Master Layout: Metadatos, CSS UI System y Navegación Sticky
-│   └── footer.php             # Cierre corporativo, Enlaces legales y Acceso Backdoor admin
-├── admin/                     # Entorno de Gestión Privada (Panel Admin)
-│   ├── includes/
-│   │   └── sidebar.php        # Menú lateral responsivo (Glassmorphism & Overlay Mobile)
-│   ├── catalogos.php          # Gestor CRUD de Tarifarios PDF con validador MIME-Type y peso
-│   ├── dashboard.php          # Hub analítico con saludo dinámico según franja horaria
-│   ├── login.php              # Autenticación segura y prevención de accesos no autorizados
-│   ├── logout.php             # Destrucción controlada del array de sesión global
-│   ├── planes.php             # Gestor CRUD Multitemático (Internet, Dúos, Tríos, Gamer)
-│   └── portadas.php           # Gestor del Hero Slider con optimización WEBP/PNG/JPG
-└── index.php                  # Landing Page SSR+CSR con hidratación asíncrona de colecciones
 
 ⚙️ Estándares de Despliegue y Mantenimiento
 Requisitos de Servidor (php.ini):
